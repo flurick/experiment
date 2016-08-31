@@ -10,6 +10,7 @@ var joke = "haha"
 var sience = "aha + haha"
 var art = "ahh"
 
+#generate bit search map based on current input
 
 func _ready():
 	
@@ -18,6 +19,10 @@ func _ready():
 	map += ["+","-","*","/","!"]
 	set_process_unhandled_key_input(true)
 	set_process(true)
+	
+	for i in range(10):
+		printt(i, pow(2,i))
+
 
 func _process(d):
 	for i in range(bitlife.size()):
@@ -27,26 +32,17 @@ func _process(d):
 		else:
 			bitlife[i] = 0
 			find_node(str("Button",i)).set_flat(true)
-	
-#	generate bit search map based on current input
 
 
 func _unhandled_key_input(e):
 	
 	#bits to buttons
+	var input=0 #the value of the 5 bits of your fingers
 	for i in range(codes.size()):
 		if e.scancode==codes[i]: 
 			bitlife[i] = bitlifetime
 			find_node(str("Button",i)).set_pressed(e.pressed)
-	
-	
-	#bit sum of pressed buttons
-	var input=0
-	if find_node(str("Button0")).is_pressed: input+=1
-	if find_node(str("Button1")).is_pressed: input+=2
-	if find_node(str("Button2")).is_pressed: input+=4
-	if find_node(str("Button3")).is_pressed: input+=8
-	if find_node(str("Button4")).is_pressed: input+=16
+			if e.pressed: input += pow(2,i)
 	
 	if input==0: 
 		var n = list2bin(bitlife)
