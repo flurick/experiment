@@ -11,7 +11,7 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="29">
+			<string_array  len="30">
 				<string> "keypad" </string>
 				<string> "anchor/left" </string>
 				<string> "anchor/top" </string>
@@ -27,8 +27,9 @@
 				<string> "margin/bottom" </string>
 				<string> "script/script" </string>
 				<string> "Control" </string>
-				<string> "GridContainer" </string>
-				<string> "columns" </string>
+				<string> "list" </string>
+				<string> "alignment" </string>
+				<string> "VBoxContainer" </string>
 				<string> "Button0" </string>
 				<string> "rect/min_size" </string>
 				<string> "toggle_mode" </string>
@@ -48,21 +49,23 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="233"> 				-1, -1, 14, 0, -1, 13, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 4, 10, 4, 11, 4, 12, 4, 13, 5, 0, 0, 0, 15, 15, -1, 9, 5, 1, 6, 1, 7, 3, 8, 3, 9, 4, 10, 4, 11, 6, 12, 7, 16, 8, 0, 0, 0, 24, 17, -1, 14, 18, 9, 5, 1, 6, 2, 7, 3, 8, 3, 9, 4, 10, 10, 11, 11, 12, 12, 19, 2, 20, 3, 21, 13, 22, 14, 23, 1, 0, 0, 0, 24, 25, -1, 14, 18, 9, 5, 1, 6, 2, 7, 3, 8, 3, 9, 15, 10, 16, 11, 17, 12, 18, 19, 2, 20, 3, 21, 13, 22, 19, 23, 2, 0, 0, 0, 24, 26, -1, 14, 18, 9, 5, 1, 6, 2, 7, 3, 8, 3, 9, 20, 10, 21, 11, 22, 12, 23, 19, 2, 20, 3, 21, 13, 22, 24, 23, 2, 0, 0, 0, 24, 27, -1, 14, 18, 9, 5, 1, 6, 2, 7, 3, 8, 3, 9, 25, 10, 26, 11, 27, 12, 28, 19, 2, 20, 3, 21, 13, 22, 29, 23, 2, 0, 0, 0, 24, 28, -1, 14, 18, 9, 5, 1, 6, 2, 7, 3, 8, 3, 9, 30, 10, 31, 11, 6, 12, 32, 19, 2, 20, 3, 21, 13, 22, 33, 23, 2, 0 </int_array>
+			<int_array  len="237"> 				-1, -1, 14, 0, -1, 13, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 4, 10, 4, 11, 4, 12, 4, 13, 5, 0, 0, 0, 17, 15, -1, 11, 3, 6, 4, 6, 5, 1, 6, 1, 7, 3, 8, 3, 9, 7, 10, 8, 11, 9, 12, 10, 16, 11, 0, 0, 0, 25, 18, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 4, 10, 13, 11, 9, 12, 14, 20, 2, 21, 3, 22, 15, 23, 16, 24, 1, 0, 0, 0, 25, 26, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 17, 10, 18, 11, 19, 12, 20, 20, 2, 21, 3, 22, 15, 23, 21, 24, 2, 0, 0, 0, 25, 27, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 22, 10, 23, 11, 24, 12, 25, 20, 2, 21, 3, 22, 15, 23, 26, 24, 2, 0, 0, 0, 25, 28, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 27, 10, 28, 11, 29, 12, 30, 20, 2, 21, 3, 22, 15, 23, 31, 24, 2, 0, 0, 0, 25, 29, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 32, 10, 33, 11, 34, 12, 35, 20, 2, 21, 3, 22, 15, 23, 36, 24, 2, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="34" shared="false">
+			<array  len="37" shared="false">
 				<int> 3 </int>
 				<bool> False </bool>
 				<bool> True </bool>
 				<int> 2 </int>
 				<real> 0 </real>
 				<resource  external="0">  </resource>
-				<real> 130 </real>
-				<real> 40 </real>
-				<int> 5 </int>
+				<int> 1 </int>
+				<real> -160 </real>
+				<real> -272 </real>
+				<real> 20 </real>
+				<real> -269 </real>
+				<int> 0 </int>
 				<vector2> 16, 16 </vector2>
 				<real> -1 </real>
-				<real> 20 </real>
 				<real> 19 </real>
 				<resource name=""></resource>				<string> "2" </string>
 				<real> 24 </real>
@@ -82,6 +85,7 @@
 				<string> "z" </string>
 				<real> 96 </real>
 				<real> 29 </real>
+				<real> 130 </real>
 				<real> 49 </real>
 				<string> "Ctrl" </string>
 			</array>
