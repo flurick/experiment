@@ -74,7 +74,9 @@ func isOdd(n):
 		return false
 
 func isInside(somepoint, shape):
-#	http://stackoverflow.com/questions/217578/how-can-i-determine-whether-a-2d-point-is-within-a-polygon
+#	http://stackoverflow.com/questions/217578/
+#	how-can-i-determine-whether-a-2d-point-is-within-a-polygon
+#
 #	Draw a line from anywhere outside, to your point,
 #	and count how often it hits any side of the polygon. 
 #	If the number of hits is even, it's outside of the polygon, 
@@ -112,6 +114,7 @@ func _unhandled_input(event):
 					SmartMove(m, shape["0"])
 			else:  
 				grabbedID = NONE
+				
 		if btn == 2:
 			if event.pressed:
 				if openShapeID != NONE and nearPoint != NONE:

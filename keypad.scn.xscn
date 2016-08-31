@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resource_file type="PackedScene" subresource_count="2" version="2.0" version_name="Godot Engine v2.0.beta.custom_build">
+<resource_file type="PackedScene" subresource_count="2" version="2.2" version_name="Godot Engine v2.2.alpha.custom_build">
 	<ext_resource path="res://keypad.gd" type="Script" index="0"></ext_resource>
 	<main_resource>
 		<dictionary name="_bundled" shared="false">
@@ -11,21 +11,64 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="3">
+			<string_array  len="25">
 				<string> "keypad" </string>
 				<string> "script/script" </string>
 				<string> "Node2D" </string>
+				<string> "GridContainer" </string>
+				<string> "focus/ignore_mouse" </string>
+				<string> "focus/stop_mouse" </string>
+				<string> "size_flags/horizontal" </string>
+				<string> "size_flags/vertical" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "columns" </string>
+				<string> "Button0" </string>
+				<string> "rect/min_size" </string>
+				<string> "toggle_mode" </string>
+				<string> "enabled_focus_mode" </string>
+				<string> "shortcut" </string>
+				<string> "text" </string>
+				<string> "flat" </string>
+				<string> "Button" </string>
+				<string> "Button1" </string>
+				<string> "Button2" </string>
+				<string> "Button3" </string>
+				<string> "Button4" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 1 </int>
+			<int> 7 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="9"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0 </int_array>
+			<int_array  len="209"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 3, 3, -1, 9, 4, 1, 5, 1, 6, 2, 7, 2, 8, 3, 9, 3, 10, 4, 11, 4, 12, 5, 0, 1, 0, 20, 13, -1, 14, 14, 6, 4, 1, 5, 7, 6, 2, 7, 2, 8, 3, 9, 3, 10, 8, 11, 8, 15, 7, 16, 2, 17, 9, 18, 10, 19, 7, 0, 1, 0, 20, 21, -1, 14, 14, 6, 4, 1, 5, 7, 6, 2, 7, 2, 8, 11, 9, 3, 10, 12, 11, 8, 15, 7, 16, 2, 17, 9, 18, 13, 19, 7, 0, 1, 0, 20, 22, -1, 14, 14, 6, 4, 1, 5, 7, 6, 2, 7, 2, 8, 14, 9, 3, 10, 15, 11, 8, 15, 7, 16, 2, 17, 9, 18, 16, 19, 7, 0, 1, 0, 20, 23, -1, 14, 14, 6, 4, 1, 5, 7, 6, 2, 7, 2, 8, 17, 9, 3, 10, 18, 11, 8, 15, 7, 16, 2, 17, 9, 18, 19, 19, 7, 0, 1, 0, 20, 24, -1, 14, 14, 6, 4, 1, 5, 7, 6, 2, 7, 2, 8, 20, 9, 3, 10, 21, 11, 8, 15, 7, 16, 2, 17, 9, 18, 22, 19, 7, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="1" shared="false">
+			<array  len="23" shared="false">
 				<resource  external="0">  </resource>
+				<bool> False </bool>
+				<int> 2 </int>
+				<real> 0 </real>
+				<real> 40 </real>
+				<int> 5 </int>
+				<vector2> 16, 16 </vector2>
+				<bool> True </bool>
+				<real> 20 </real>
+				<resource name=""></resource>				<string> "2" </string>
+				<real> 24 </real>
+				<real> 46 </real>
+				<string> "w" </string>
+				<real> 50 </real>
+				<real> 69 </real>
+				<string> "s" </string>
+				<real> 73 </real>
+				<real> 92 </real>
+				<string> "z" </string>
+				<real> 96 </real>
+				<real> 130 </real>
+				<string> "Ctrl" </string>
 			</array>
 			<string> "version" </string>
 			<int> 2 </int>
