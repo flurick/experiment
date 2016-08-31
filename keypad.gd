@@ -4,7 +4,7 @@ extends Control
 var codes = [KEY_2, KEY_W, KEY_S, KEY_Z, KEY_CONTROL] # rotated keyboard works nicely :)
 var map = []
 var bitlife = [0,0,0,0,0]
-var bitlifetime = 0.1
+var bitlifetime = 0.3
 
 var joke = "haha"
 var sience = "aha + haha"
@@ -15,7 +15,7 @@ func _ready():
 	
 	map += ["a","b","c","d","e","f","g","h","i","j","k","l","m"]
 	map += ["n","o","p","q","r","s","t","u","v","w","x","y","z"]
-	map += ["+","-","-","/","!"]
+	map += ["+","-","*","/","!"]
 	set_process_unhandled_key_input(true)
 	set_process(true)
 
@@ -27,10 +27,9 @@ func _process(d):
 		else:
 			bitlife[i] = 0
 			find_node(str("Button",i)).set_flat(true)
-#		find_node(str("Button",i)).set_text(str(bitlife[i]))
 	
 #	generate bit search map based on current input
-#	trigger after all complete release, with keys activate within ~300ms
+
 
 func _unhandled_key_input(e):
 	
@@ -52,11 +51,6 @@ func _unhandled_key_input(e):
 	if input==0: 
 		var n = list2bin(bitlife)
 		printt( nr2key(n-1) )
-	
-#	printt( str(pressedbitsum).pad_zeros(2), \
-#	str(livebitsum).pad_zeros(2), \
-#	nr2key(livebitsum),\
-#	bitlife)
 
 
 
