@@ -2,22 +2,37 @@
 
 [ext_resource path="res://todoitem.gd" type="Script" id=1]
 
-[node name="a" type="LineEdit"]
+[node name="a" type="WindowDialog"]
 
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 333.0
+margin/top = 221.0
+margin/right = 501.0
+margin/bottom = 331.0
+popup/exclusive = true
+window/title = ""
+script/script = ExtResource( 1 )
+
+[node name="TextEdit" type="TextEdit" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
 focus/ignore_mouse = false
 focus/stop_mouse = true
 size_flags/horizontal = 2
 size_flags/vertical = 2
-margin/left = 501.0
-margin/top = 203.0
-margin/right = 669.0
-margin/bottom = 227.0
-placeholder/text = "something"
-placeholder/alpha = 0.6
-align = 1
-focus_mode = 2
+margin/left = 10.0
+margin/top = 10.0
+margin/right = 10.0
+margin/bottom = 10.0
+syntax_highlighting = false
+show_line_numbers = false
+highlight_all_occurrences = false
+caret/block_caret = false
 caret/caret_blink = false
 caret/caret_blink_speed = 0.65
-script/script = ExtResource( 1 )
 
 

@@ -11,7 +11,7 @@
 			<array  len="0" shared="false">
 			</array>
 			<string> "names" </string>
-			<string_array  len="30">
+			<string_array  len="38">
 				<string> "keypad" </string>
 				<string> "anchor/left" </string>
 				<string> "anchor/top" </string>
@@ -30,12 +30,20 @@
 				<string> "list" </string>
 				<string> "alignment" </string>
 				<string> "VBoxContainer" </string>
+				<string> "Label" </string>
+				<string> "text" </string>
+				<string> "percent_visible" </string>
+				<string> "lines_skipped" </string>
+				<string> "max_lines_visible" </string>
+				<string> "Label1" </string>
+				<string> "Label2" </string>
+				<string> "Label3" </string>
+				<string> "Label4" </string>
 				<string> "Button0" </string>
 				<string> "rect/min_size" </string>
 				<string> "toggle_mode" </string>
 				<string> "enabled_focus_mode" </string>
 				<string> "shortcut" </string>
-				<string> "text" </string>
 				<string> "flat" </string>
 				<string> "Button" </string>
 				<string> "Button1" </string>
@@ -44,14 +52,14 @@
 				<string> "Button4" </string>
 			</string_array>
 			<string> "node_count" </string>
-			<int> 7 </int>
+			<int> 12 </int>
 			<string> "node_paths" </string>
 			<array  len="0" shared="false">
 			</array>
 			<string> "nodes" </string>
-			<int_array  len="237"> 				-1, -1, 14, 0, -1, 13, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 4, 10, 4, 11, 4, 12, 4, 13, 5, 0, 0, 0, 17, 15, -1, 11, 3, 6, 4, 6, 5, 1, 6, 1, 7, 3, 8, 3, 9, 7, 10, 8, 11, 9, 12, 10, 16, 11, 0, 0, 0, 25, 18, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 4, 10, 13, 11, 9, 12, 14, 20, 2, 21, 3, 22, 15, 23, 16, 24, 1, 0, 0, 0, 25, 26, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 17, 10, 18, 11, 19, 12, 20, 20, 2, 21, 3, 22, 15, 23, 21, 24, 2, 0, 0, 0, 25, 27, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 22, 10, 23, 11, 24, 12, 25, 20, 2, 21, 3, 22, 15, 23, 26, 24, 2, 0, 0, 0, 25, 28, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 27, 10, 28, 11, 29, 12, 30, 20, 2, 21, 3, 22, 15, 23, 31, 24, 2, 0, 0, 0, 25, 29, -1, 14, 19, 12, 5, 1, 6, 2, 7, 3, 8, 3, 9, 32, 10, 33, 11, 34, 12, 35, 20, 2, 21, 3, 22, 15, 23, 36, 24, 2, 0 </int_array>
+			<int_array  len="384"> 				-1, -1, 14, 0, -1, 13, 1, 0, 2, 0, 3, 0, 4, 0, 5, 1, 6, 2, 7, 3, 8, 3, 9, 4, 10, 4, 11, 4, 12, 4, 13, 5, 0, 0, 0, 17, 15, -1, 11, 3, 6, 4, 6, 5, 1, 6, 1, 7, 3, 8, 3, 9, 7, 10, 8, 11, 9, 12, 10, 16, 11, 0, 1, 0, 18, 18, -1, 12, 5, 2, 6, 2, 7, 3, 8, 11, 9, 4, 10, 4, 11, 12, 12, 13, 19, 14, 20, 15, 21, 11, 22, 16, 0, 1, 0, 18, 23, -1, 11, 5, 2, 6, 2, 7, 3, 8, 11, 9, 4, 10, 17, 11, 12, 12, 18, 20, 15, 21, 11, 22, 16, 0, 1, 0, 18, 24, -1, 11, 5, 2, 6, 2, 7, 3, 8, 11, 9, 4, 10, 19, 11, 12, 12, 20, 20, 15, 21, 11, 22, 16, 0, 1, 0, 18, 25, -1, 11, 5, 2, 6, 2, 7, 3, 8, 11, 9, 4, 10, 21, 11, 12, 12, 22, 20, 15, 21, 11, 22, 16, 0, 1, 0, 18, 26, -1, 11, 5, 2, 6, 2, 7, 3, 8, 11, 9, 4, 10, 23, 11, 12, 12, 24, 20, 15, 21, 11, 22, 16, 0, 0, 0, 33, 27, -1, 14, 28, 25, 5, 1, 6, 2, 7, 3, 8, 3, 9, 4, 10, 26, 11, 9, 12, 27, 29, 2, 30, 3, 31, 28, 19, 29, 32, 1, 0, 0, 0, 33, 34, -1, 14, 28, 25, 5, 1, 6, 2, 7, 3, 8, 3, 9, 30, 10, 31, 11, 32, 12, 33, 29, 2, 30, 3, 31, 28, 19, 34, 32, 2, 0, 0, 0, 33, 35, -1, 14, 28, 25, 5, 1, 6, 2, 7, 3, 8, 3, 9, 20, 10, 35, 11, 36, 12, 37, 29, 2, 30, 3, 31, 28, 19, 38, 32, 2, 0, 0, 0, 33, 36, -1, 14, 28, 25, 5, 1, 6, 2, 7, 3, 8, 3, 9, 39, 10, 40, 11, 41, 12, 42, 29, 2, 30, 3, 31, 28, 19, 43, 32, 2, 0, 0, 0, 33, 37, -1, 14, 28, 25, 5, 1, 6, 2, 7, 3, 8, 3, 9, 44, 10, 45, 11, 46, 12, 47, 29, 2, 30, 3, 31, 28, 19, 48, 32, 2, 0 </int_array>
 			<string> "variants" </string>
-			<array  len="37" shared="false">
+			<array  len="49" shared="false">
 				<int> 3 </int>
 				<bool> False </bool>
 				<bool> True </bool>
@@ -64,6 +72,19 @@
 				<real> 20 </real>
 				<real> -269 </real>
 				<int> 0 </int>
+				<real> 140 </real>
+				<real> 14 </real>
+				<string> "bannas" </string>
+				<real> 1 </real>
+				<int> -1 </int>
+				<real> 18 </real>
+				<real> 32 </real>
+				<real> 36 </real>
+				<real> 50 </real>
+				<real> 54 </real>
+				<real> 68 </real>
+				<real> 72 </real>
+				<real> 86 </real>
 				<vector2> 16, 16 </vector2>
 				<real> -1 </real>
 				<real> 19 </real>
@@ -73,7 +94,6 @@
 				<real> 46 </real>
 				<real> 5 </real>
 				<string> "w" </string>
-				<real> 50 </real>
 				<real> -23 </real>
 				<real> 69 </real>
 				<real> -3 </real>
