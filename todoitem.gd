@@ -9,7 +9,7 @@ var delta = Vector2(0,0)
 func _ready():
 	#connect("input_event",self,"_on_input_event")
 	set_process_input(true)
-	popup()
+	#popup()
 
 #func _on_input_event( e ):
 func _input_event(e):

@@ -1,7 +1,7 @@
 extends "2dshape.gd"
 
 var shape = {
-"0": {"shape":Vector2Array(), "color":Color(1,1,0, 0.3)}
+	"0": {"shape":Vector2Array(), "color":Color(1,1,0, 0.3)}
 }
 
 var cornerHandleSize = 8
@@ -9,17 +9,25 @@ var openShapeID = NONE
 
 func _ready():
 	
+	var polygon = Polygon2D.new()
+	var points = Vector2Array()
+	points.append(Vector2(0,100))
+	points.append(Vector2(100,0))
+	points.append(Vector2(-100,0))
+	polygon.set_polygon(points)
+	add_child(polygon)
+	
 	shape["0"] = NewTriangle(500)
 	
 	M = get_viewport_rect().size / 2
-	set_process(true)
+	#set_process(true)
 	set_process_unhandled_input(true)
 
 
 func _process(delta):
 	
-	update()
-#	printt(shape.size(), shape["0"].size())
+	#update()
+	printt(shape.size(), shape["0"].size())
 
 
 func NewTriangle(size):
@@ -36,7 +44,7 @@ func InsertShape(pos, size):
 	shape[backID] = newshape
 
 func status(msg):
-	#print(msg,"ing")
+	print(msg,"ing")
 	get_node("/root/Node/ui/text/status").set_text(msg)
 
 
@@ -130,11 +138,13 @@ func _unhandled_input(event):
 #				else:  status("Stop Edit")
 
 
-func _draw():
-	draw_colored_polygon(NewTriangle(100), color.green)
-	
+#func _draw():
+#	
+#	print("drawing")
+#	draw_colored_polygon(NewTriangle(1000), color.green)
+#	
 #	for s in shape:
-#		DrawShape(shape[s])
+#		draw_rect(Rect2(Vector2(100,100),Vector2(500,500)),Color(0,1,1,0.1))
 	
 
 
