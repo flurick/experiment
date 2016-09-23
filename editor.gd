@@ -1,9 +1,14 @@
 extends "2dshape.gd"
 
 var handle = { "size":8, "color":Color(0,1,1,0.5) }
+var opened = null
 var selected = null
 var nearest = null
 var shape = preload("Polygon2D.tscn")
+var mode = {
+	group = false,
+	delete = false
+}
 
 func status(msg):
 	print(msg,"ing")
@@ -73,9 +78,10 @@ func isInside(somepoint, shape):
 
 func _unhandled_input(event):
 	
+	update()
+		
 	if event.type == InputEvent.MOUSE_MOTION:
 		
-		update()
 		# highlight polygon, edge or corner
 		m = event.pos
 		var nearestDistance = 1000
@@ -86,7 +92,7 @@ func _unhandled_input(event):
 					nearestDistance = distance
 					nearest = child
 				child.set_color(Color(0.5,0.5,0.5))
-		if nearest!=null: nearest.set_color(Color(0,0.5,0.5))
+		if nearest!=null and find_node("mouse").get_child_count()==0: nearest.set_color(Color(0,0.5,0.5))
 	
 	if event.type == InputEvent.MOUSE_BUTTON:
 		var btn = event.button_index
@@ -102,9 +108,13 @@ func _unhandled_input(event):
 			else:
 				status("releas")
 				for child in m.get_children():
-					child.set_pos(m.get_pos()+child.get_pos())
 					m.remove_child(child)
-					add_child(child)
+					if nearest.get_pos().distance_to(m.get_pos()) < 100:
+						nearest.add_child(child)
+					else:
+						child.set_pos(m.get_pos()+child.get_pos())
+						add_child(child)
+					
 				
 		if btn == 2:
 			if event.pressed: 
@@ -112,7 +122,35 @@ func _unhandled_input(event):
 				add_child(polygon)
 				polygon.set_pos(find_node("mouse").get_pos())
 
+	if event.type == InputEvent.KEY:
+		if event.scancode == KEY_SPACE:
+			opened = find_node("mouse").get_child(0)
+			opened.set_color(Color(1,0,0,0.8))
+		
+		if event.scancode == KEY_G:
+			if event.pressed:  mode.group = true
+			else:              mode.group = false
+			
+		if event.scancode == KEY_D:
+			if event.pressed:  mode.delete = true
+			else:              mode.delete = false
+		
+		get_node("./mode/group").set_pressed(mode.group)
+		get_node("./mode/delete").set_pressed(mode.delete)
+		
+		
 
 func _draw():
+	
+	#mark alreay grabbed
+	if find_node("mouse").get_child_count() > 0:
+		for child in find_node("mouse").get_children():
+			draw_line(m,m+child.get_pos(), Color(0,0,0,0.5))
+	else:
+		if nearest != null:
+			draw_line(m,nearest.get_pos(), Color(0,0,0,0.5))
+				
+	#mark to be grabbed
 	for child in get_children():
-		draw_line(get_viewport_rect().size/2,child.get_pos(),  Color(0,0,0,0.1),  3)
+		draw_line(get_viewport_rect().size/2,child.get_pos(), Color(0,0,0,0.03))
+
